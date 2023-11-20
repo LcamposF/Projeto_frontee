@@ -24,18 +24,23 @@ function Produtos() {
         <div>
             <Header />
             <p>Página de produtos</p>
-            {categories && categories.map((category) => (
-                <button key={category.id} onClick={ () => handleClick(category.id) } >{ category.name }</button>
-            ))}
-            {products && products.map((produto) => (
-                <div key={produto.id}>
-                  <a href={`produtos/detalhes/${produto.id}`} ><h4>{produto.title}</h4></a>
-                  
-                  <img src={produto.thumbnail} alt={produto.title} />
-                  <p><i>R$</i>{produto.price}</p>
+            <div className='d-flex'>
+                <div className='d-flex flex-column flex-shrink-0 p-3 text-white bg-dark'>
+                    {categories && categories.map((category) => (
+                        <button className='btn btn-secondary' key={category.id} onClick={ () => handleClick(category.id) } >{ category.name }</button>
+                    ))}
                 </div>
-            ))}
-            <button type='button'></button>
+                <div>
+                    {products && products.map((produto) => (
+                        <div key={produto.id}>
+                            <a href={`produtos/detalhes/${produto.id}`} ><h4>{produto.title}</h4></a>
+                            
+                            <img src={produto.thumbnail} alt={produto.title} />
+                            <p><i>R$</i>{produto.price}</p>
+                        </div>
+                    ))}
+                </div>
+            </div>
         </div>
     )
 }
