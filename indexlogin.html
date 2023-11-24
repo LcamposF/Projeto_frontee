@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login de Acesso</title>
+    <!-- CSS -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Roboto', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-image: url(img/Patio-de-loja-de-carros-usados.jpg);
+            background-size: cover;
+        }
+        .contem {
+            display: auto;
+            float: left;
+            background: rgba(255, 255, 255, 0.003);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 0 10px rgba(0,0,0,.5);
+            width: 500px;
+            height: 500px;
+            text-align:center;
+            border-radius: 30px;
+            box-shadow: 2px 2px 6px rgba(0,0,0,.7);
+            border: solid red 5px;
+        }
+        header{
+            padding: 50px;
+            font-size: 26px;
+        }
+        label {
+            font-size: 30px;
+        }
+        input {
+            width: 270px;
+            height: 30px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+        button {
+            width: 130px;
+            height: 30px;
+            margin-left: 60px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: large;
+        }
+        button:hover{
+            opacity: 0.8;
+            ;
+        }
+        a {
+            color: rgb(248, 12, 20);
+            font-weight: bold;
+            text-decoration: none;
+            font-size: 20px;
+            padding: 20px;
+        }
+        h1, a, label{
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .rec {
+            display: flex;
+            justify-content: space-around;
+            padding: 30px;
+        }
+        .final {
+            clear: both;
+            font-size: 20px;
+        }
+        .cds {
+            display: flex;
+            justify-content: space-evenly;
+        }
+    </style>
+</head>
+<body>
+    <div class="contem">
+       <header>
+         <h1>LOGIN</h1>
+        </header>
+        <form action="">
+            <div>
+                <label for="">Usuário:</label>
+                <input type="text" id="usuario" placeholder="Digite o nome do usuário"><br>
+                <label for="" id="senha" placeholder="Digite a senha">Senha:</label>
+                <input type="password" placeholder="Digite a Senha"><br>
+                <button type="submit">Entrar</button><br>
+            </div>
+        </form><br>
+        <a href="colocaquiRanyindex" class="cds">Cadastramento Aqui</a>
+        <div class="rec">
+            <label for="" class="final">Esqueceu a Senha?</label><h5><a href="recuperar.html">Clique Aqui</a></h5>
+        </div>
+    </div>
+    
+</body>
+</html>

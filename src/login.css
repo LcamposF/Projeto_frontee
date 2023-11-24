@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url(img/Patio-de-loja-de-carros-usados.jpg);
+    background-size: cover;
+}
+.contem {
+    display: auto;
+    float: left;
+    background: rgba(255, 255, 255, 0.003);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 10px rgba(0,0,0,.5);
+    width: 500px;
+    height: 500px;
+    text-align:center;
+    border-radius: 30px;
+    box-shadow: 2px 2px 6px rgba(0,0,0,.7);
+    border: solid red 5px;
+}
+header{
+    padding: 50px;
+    font-size: 26px;
+}
+label {
+    font-size: 30px;
+}
+input {
+    width: 270px;
+    height: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+button {
+    width: 130px;
+    height: 30px;
+    margin-left: 60px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: large;
+}
+button:hover{
+    opacity: 0.8;
+    ;
+}
+a {
+    color: rgb(248, 12, 20);
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px;
+}
+h1, a, label{
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.rec {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+}
+.final {
+    clear: both;
+    font-size: 20px;
+}
+.cds {
+    display: flex;
+    justify-content: space-evenly;
+}
