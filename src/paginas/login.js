@@ -5,8 +5,6 @@ function Login() {
     return (
         <div>
             <Header />
-            <p>Página de login</p>
-
             <div className="contem">
                 <img src="img/carro sem fundo.jpg" alt="imagem de carros" />
                 <h1>LOGIN</h1>
