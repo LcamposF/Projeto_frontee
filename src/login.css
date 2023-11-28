@@ -1,21 +1,17 @@
-/* * {
-    margin: 0;
-    padding: 0;
-}
-body {
+.bodylogin {
     font-family: 'Roboto', sans-serif;
     display: flex;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-image: url(../img/Patio-de-loja-de-carros-usados.jpg);
+    background-image: url(../img/fundoloja33.jpg);
     background-size: cover;
 }
 .contem {
     display: auto;
-    float: left;
-    width: 500px;
+    float: center;
+    width: 610px;
     height: 450px;
     background: rgba(255, 255, 255, 0.003);
     backdrop-filter: blur(10px);
@@ -27,21 +23,21 @@ body {
     padding: 40px;
     border: solid;
 }
-input {
+.logus {
     width: 270px;
     height: 30px;
     margin-top: 20px;
     margin-bottom: 20px;
     border-radius: 10px;
 }
-button {
+.logbot {
     width: 130px;
     height: 30px;
     border-radius: 10px;
     cursor: pointer;
     font-size: large;
 }
-button:hover{
+.logbot:hover{
     opacity: 0.8;
     ;
 }
@@ -51,7 +47,7 @@ button:hover{
     font-size: 20px;
     padding: 20px;
 }
-h1, .cds, label{
+.logh1, .cds, .laglab{
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 .final {
@@ -59,8 +55,6 @@ h1, .cds, label{
     font-size: 25px;
     color:rgb(120, 5, 5);
 }
-img {
-    width: 50px;
-    height: 50px;
-    float: right;
-} */
+.laglab {
+    font-size: 30px;
+}
