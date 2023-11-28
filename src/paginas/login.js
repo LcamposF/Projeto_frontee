@@ -6,7 +6,6 @@ function Login() {
         <div>
             <Header />
             <div className="contem">
-                <img src="img/carro sem fundo.jpg" alt="imagem de carros" />
                 <h1>LOGIN</h1>
                 <form action=""/>
                     <label for="">Usuário:</label>

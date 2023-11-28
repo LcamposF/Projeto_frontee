@@ -35,7 +35,6 @@ function Detalhes() {
     return (
         <div>
             <Header />
-            <p>Página de Detalhes</p>
             {product && (
                 <div className="">
                     <div className="row">
