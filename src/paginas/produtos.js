@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import Header from "../componentes/header";
-import { getCategories, getProducts, getProductsFromCategoryAndQuery } from "../utils/requests";
+import { getCategories, getProducts, getProductsByName, getProductsFromCategoryAndQuery } from "../utils/requests";
 
 function Produtos() {
     const [categories, setCategories] = useState();
@@ -21,6 +21,12 @@ function Produtos() {
         console.log(products);
     }
 
+    const search = async () => {
+        const texto = document.getElementById('campoBusca').value;
+        const data = await getProductsByName(texto);
+        setProducts(data.results);
+    }
+
     useEffect(() => {
         fetchCategories();
         fetchProducts();
@@ -29,7 +35,17 @@ function Produtos() {
     return (
         <div>
             <Header />
-            
+            <div className="row justify-content-center mb-4">
+                <div className="col-md-6 mb-2">
+                    <form className="d-flex align-items-center">
+                        <div className="form-group mb-0 flex-grow-1">
+                            <input type="text" className="form-control" id="campoBusca" placeholder="Digite sua busca" />
+                        </div>
+                        <button onClick={ search } type="button" className="btn btn-primary">Buscar</button>
+                    </form>
+                </div>
+                <hr />
+            </div>
             <div className='d-flex mt-3'>
                 <div className='d-flex flex-column flex-shrink-0 p-3 border-end'>
                     {categories && categories.map((category) => (
