@@ -3,11 +3,11 @@ import '../login.css';
 
 function Login() {
     return (
-        <div className="bodylogin">
-            <div>
-                <Header />
-                <p>Página de login</p>
+        <div>
+            <Header />
+            <p>Página de login</p>
 
+            <div className="bodylogin">
                 <div className="contem">
                     <h1 className="logh1">LOGIN</h1>
                     <form action=""/>
@@ -18,11 +18,11 @@ function Login() {
                         <input type="password" className="logus" placeholder="Digite a Senha"/><br/>
                         <button className="lagbot" type="submit">Entrar</button><br/>
                     <form/><br/>
-                    <a href="colocaquiRanyindex" className="cds">Cadastramento Aqui</a>
-                    <div className="rec">
-                        <label for="" className="final">Esqueceu a Senha?</label><h5><a href="recuperar.html" className="cds">Clique Aqui</a></h5>
+                        <a href="colocaquiRanyindex" className="cds">Cadastramento Aqui</a>
+                        <div className="rec">
+                            <label for="" className="final">Esqueceu a Senha?</label><h5><a href="recuperar.html" className="cds">Clique Aqui</a></h5>
+                        </div>
                     </div>
-                </div>
             </div>
         </div>
     )
