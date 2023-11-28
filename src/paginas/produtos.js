@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import Header from "../componentes/header";
-import { getCategories, getProductsFromCategoryAndQuery } from "../utils/requests";
+import { getCategories, getProducts, getProductsFromCategoryAndQuery } from "../utils/requests";
 
 function Produtos() {
     const [categories, setCategories] = useState();
@@ -10,6 +10,11 @@ function Produtos() {
         const data = await getCategories();
         setCategories(data);
     }
+    const fetchProducts = async () => {
+        const data = await getProducts();
+        setProducts(data.map(item => item.body));
+    }
+
     const handleClick = async (id) => {
         const data = await getProductsFromCategoryAndQuery(id);
         setProducts(data.results);
@@ -18,6 +23,7 @@ function Produtos() {
 
     useEffect(() => {
         fetchCategories();
+        fetchProducts();
     }, [])
 
     return (
