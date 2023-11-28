@@ -3,7 +3,7 @@ import '../login.css';
 
 function Login() {
     return (
-        <body className="bodylogin">
+        <div className="bodylogin">
             <div>
                 <Header />
                 <p>Página de login</p>
@@ -24,7 +24,7 @@ function Login() {
                     </div>
                 </div>
             </div>
-        </body>
+        </div>
     )
 }
 
