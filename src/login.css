@@ -1,27 +1,28 @@
 .bodylogin {
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
     display: flex;
-    justify-content: right;
+    justify-content: center;
     align-items: center;
-    height: 100vh;
-    margin: 0;
-    background-image: url(../img/fundoloja33.jpg);
+    height: 90vh;
+    
+    background-image: url(../img/fundoloja333.jpg);
     background-size: cover;
+    background-position: center;
 }
 .contem {
     display: auto;
     float: center;
     width: 610px;
-    height: 450px;
+    height: auto;
     background: rgba(255, 255, 255, 0.003);
     backdrop-filter: blur(10px);
     box-shadow: 2px 4px 6px rgba(0, 0, 0, .7);
     border-radius: 30px;
     overflow: hidden;
     transition: all .5s ease-in-out;
-    text-align: center;
+    
     padding: 40px;
-    border: solid;
+    border: 1px solid #999;
 }
 .logus {
     width: 270px;
@@ -55,6 +56,4 @@
     font-size: 25px;
     color:rgb(120, 5, 5);
 }
-.laglab {
-    font-size: 30px;
-}
+

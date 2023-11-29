@@ -8,12 +8,12 @@ function Header() {
                 <ul className="nav-itens">
                     <li><a href="/">Home</a></li>
                     <li><a href="/produtos">Produtos</a></li>
-                    <li><a href="/">Fale Conosco</a></li>
+                    
                 </ul> 
             </div>
-            <div className="btn"    >
+            <div className="btn-header"    >
             <li><a href="/login" className="login">Login</a></li>
-            <li><a href="/login" className="cadastro">Cadastro</a></li>
+            <li><a href="/cadastro" className="cadastro">Cadastre-se</a></li>
             </div>
         </nav>
     )

@@ -5,23 +5,24 @@ function Login() {
     return (
         <div>
             <Header />
-            <p>Página de login</p>
+
 
             <div className="bodylogin">
                 <div className="contem">
-                    <h1 className="logh1">LOGIN</h1>
-                    <form action=""/>
-                        <label for="" className="laglab">Usuário:</label>
-                        <input type="text" className="logus" placeholder="Digite o nome do usuário"/>
-                        <br/>
-                        <label for="" className="laglab" placeholder="Digite a senha">Senha:</label>
-                        <input type="password" className="logus" placeholder="Digite a Senha"/><br/>
-                        <button className="lagbot" type="submit">Entrar</button><br/>
-                    <form/><br/>
-                        <a href="colocaquiRanyindex" className="cds">Cadastramento Aqui</a>
-                        <div className="rec">
-                            <label for="" className="final">Esqueceu a Senha?</label><h5><a href="recuperar.html" className="cds">Clique Aqui</a></h5>
+                    <h1 className="text-center">LOGIN</h1>
+                    <form className="mb-4">
+                        <div className="form-group mb-1">
+                        <label for="" className="form-label fw-bold">Usuário:</label>
+                        <input type="text" className="form-control" placeholder="Digite o nome do usuário"/>
                         </div>
+                        <div className="form-group">
+                        <label for="" className="form-label fw-bold" placeholder="Digite a senha">Senha:</label>
+                        <input type="password" className="form-control" placeholder="Digite a Senha"/><br/>
+                        </div>
+                        <a href="/produtos " className="btn btn-dark">Entrar</a>
+                    </form>
+                        <a href=" " className="btn btn-dark w-25 ">Cadastre-se</a>
+                        
                     </div>
             </div>
         </div>

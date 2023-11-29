@@ -35,13 +35,13 @@ function Produtos() {
     return (
         <div>
             <Header />
-            <div className="row justify-content-center mb-4">
+            <div className="row justify-content-center mb-4 mt-2">
                 <div className="col-md-6 mb-2">
                     <form className="d-flex align-items-center">
                         <div className="form-group mb-0 flex-grow-1">
                             <input type="text" className="form-control" id="campoBusca" placeholder="Digite sua busca" />
                         </div>
-                        <button onClick={ search } type="button" className="btn btn-primary">Buscar</button>
+                        <button onClick={ search } type="button" className="btn btn-dark">Buscar</button>
                     </form>
                 </div>
                 <hr />
@@ -49,7 +49,7 @@ function Produtos() {
             <div className='d-flex mt-3'>
                 <div className='d-flex flex-column flex-shrink-0 p-3 border-end'>
                     {categories && categories.map((category) => (
-                        <button className='btn btn-outline-secondary mb-1' key={category.id} onClick={ () => handleClick(category.id) } >{ category.name }</button>
+                        <button className='btn btn-outline-dark mb-1' key={category.id} onClick={ () => handleClick(category.id) } >{ category.name }</button>
                     ))}
                 </div>
                 <div className="container">
