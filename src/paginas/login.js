@@ -21,7 +21,7 @@ function Login() {
                         </div>
                         <a href="/produtos " className="btn btn-dark">Entrar</a>
                     </form>
-                        <a href=" " className="btn btn-dark w-25 ">Cadastre-se</a>
+                        <a href="/cadastro " className="btn btn-dark w-25 ">Cadastre-se</a>
                         
                     </div>
             </div>

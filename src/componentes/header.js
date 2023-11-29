@@ -16,7 +16,7 @@ function Header() {
             </div>
             <div className="btn-header"    >
                 <li><a href="/login" className="login">Login</a></li>
-                <li><a href="/cadastro" className="cadastro">Cadastre-se</a></li>
+                <li><a href="/cadastro" className="cadastro ">Cadastre-se</a></li>
             </div>
         </nav>
     )
