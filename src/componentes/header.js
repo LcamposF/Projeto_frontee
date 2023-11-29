@@ -5,7 +5,7 @@ function Header() {
     return (
         <nav>
             <div className="logo">
-            <a href='/'><img src={logoImage} alt="Logo da COMPRAS_JP" /></a> 
+            <a href='/produtos'><img src={logoImage} alt="Logo da COMPRAS_JP" /></a> 
             </div>
             <div className="links">
                 <ul className="nav-itens">

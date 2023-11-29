@@ -56,7 +56,6 @@ function Detalhes() {
                         </div>
                         <div className="col-md-6 p-5">
                             <div>
-                                <span></span>
                                 <div>
                                     <span className="">{product.condition}</span>
                                 </div>
@@ -67,6 +66,10 @@ function Detalhes() {
                             <div>
                                 <h3><span>R$</span>{product.price}</h3>
                                 <p>Em 12x <span>{(product.price / 12).toFixed(2)}</span></p>
+                            </div>
+                            <div>
+                                <button className="btn btn-primary m-3">Comprar</button>
+                                <button className="btn btn-secondary">Adicionar ao Carrinho</button>
                             </div>
                             <div>
                                 <div className="container mt-5 mb-5">
@@ -93,10 +96,6 @@ function Detalhes() {
                                         ))}
                                     </ul>
                                 </div>
-                            </div>
-                            <div>
-                                <button className="btn btn-primary m-3">Comprar</button>
-                                <button className="btn btn-secondary">Adicionar ao Carrinho</button>
                             </div>
                         </div>
                     </div>
