@@ -7,21 +7,23 @@
 nav {
     display: flex;
     justify-content: space-around;
-    font-family: 'Roboto Mono', monospace;
-    margin-top: 0px;
     align-items: center;
+    font-family: 'Roboto Mono', monospace;
+    margin-top: 5px;
+    margin-bottom: 5px;
     color: #202020;
+    
 }
 
-.logo {
-    font-weight: 800;
-    font-size: 25px;
 
+.logo img{
+    width: 120px;
 }
 
 .nav-itens {
     list-style: none;
     display: flex;
+    align-items: center;
     color: #202020;
 }
 
@@ -30,10 +32,12 @@ nav {
     text-decoration: none;
     padding-left: 20px;
     color: #202020;
+    
 
 }
 .nav-itens>li>a:hover{
     color: #a7a7a7;
+    
 } 
 .login {
     padding: 10px 40px;

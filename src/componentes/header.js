@@ -1,9 +1,12 @@
 import './header.css'
+import logoImage from './logo.png';
 
 function Header() {
     return (
         <nav>
-            <div className="logo">COMPRAS_JP</div>
+            <div className="logo">
+            <a href='/'><img src={logoImage} alt="Logo da COMPRAS_JP" /></a> 
+            </div>
             <div className="links">
                 <ul className="nav-itens">
                     <li><a href="/">Home</a></li>
@@ -12,8 +15,8 @@ function Header() {
                 </ul> 
             </div>
             <div className="btn-header"    >
-            <li><a href="/login" className="login">Login</a></li>
-            <li><a href="/cadastro" className="cadastro">Cadastre-se</a></li>
+                <li><a href="/login" className="login">Login</a></li>
+                <li><a href="/cadastro" className="cadastro">Cadastre-se</a></li>
             </div>
         </nav>
     )

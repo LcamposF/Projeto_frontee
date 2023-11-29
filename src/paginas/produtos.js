@@ -35,6 +35,7 @@ function Produtos() {
     return (
         <div>
             <Header />
+            <hr />
             <div className="row justify-content-center mb-4 mt-2">
                 <div className="col-md-6 mb-2">
                     <form className="d-flex align-items-center">
@@ -44,7 +45,7 @@ function Produtos() {
                         <button onClick={ search } type="button" className="btn btn-dark">Buscar</button>
                     </form>
                 </div>
-                <hr />
+                
             </div>
             <div className='d-flex mt-3'>
                 <div className='d-flex flex-column flex-shrink-0 p-3 border-end'>
